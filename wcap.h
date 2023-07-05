@@ -1,6 +1,8 @@
 #pragma once
 
-#define UNICODE
+#if !defined(UNICODE)
+#	define UNICODE
+#endif
 #define COBJMACROS
 #define WIN32_LEAN_AND_MEAN
 #define _CRT_SECURE_NO_DEPRECATE
